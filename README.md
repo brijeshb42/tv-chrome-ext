@@ -1,0 +1,1 @@
+Get notified when a new episode of your favourite TV Show is coming right away in your favourite browser.
