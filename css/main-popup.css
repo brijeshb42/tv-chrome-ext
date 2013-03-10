@@ -1,0 +1,42 @@
+body{
+	min-width: 400px;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+}
+.alert-inverse{
+	color: #fff;
+	background-color: #141414;
+}
+.modal{
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+}
+.overview{
+	display: none;
+	padding: 0.25em;
+	margin: 0;
+	border-radius: 5px;
+}
+#todayList{
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 480px) {
+	.modal{
+		top: 0;
+		left: 0;
+		padding: 0;
+		margin: 0;
+	}
+}
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Show - TV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+      #searchForm{
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding-top: 3em;
+      }
+      #searchHeading{
+        margin: 0;
+        border-radius: 0;
+        -webkit-border-radius:0;
+      }
+      #searchResult,#searchList{
+        display: none;
+      }
+      .overview{
+        text-align: justify;
+        display: block;
+      }
+      #clear{
+        margin-left: -20px;
+      }
+
+      #loadingBar{
+        display: none;
+      }
+      .progress{
+        margin-bottom: 0;
+      }
+    </style>
+<script type="text/javascript" src="js/analytics.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="background.html">TV Show Manager</a>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li><a href="background.html">Home</a></li>
+              <li  class="active"><a href="add.html">Add Show</a></li>
+              <li><a href="upcoming.html">Upcoming Shows</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+      	<form id="searchForm" class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="seriesname">Enter Show Name</label>
+            <div class="controls">
+              <input type="text" id="seriesname" name="seriesname" placeholder="Show Name"><span id="clear" class="icon icon-remove"></span>
+            </div>
+          </div>
+          <div class="control-group">
+              <div class="controls">
+                <button type="submit" class="btn">Search</button>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="row" id="loadingBar">
+         <div class="progress progress-info progress-striped active">
+          <div class="bar" style="width: 100%;"></div>
+        </div>
+      </div>
+      <div class="row" id="searchResult">
+          <h4 class="alert alert-info" id="searchHeading"></h4>
+          <ul id="searchList" class="nav nav-tabs nav-stacked"></ul>
+      </div>
+      <footer>
+        <p>&copy;&nbsp;<a href="mailto:brijeshb42@gmail.com" target="_blank">b2</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootbox.min.js"></script>
+    <script src="js/database.min.js"></script>
+    <script src="js/network.min.js"></script>
+    <script src="js/ui.min.js"></script>
+    <script src="js/add.min.js"></script>
+  </body>
+</html>

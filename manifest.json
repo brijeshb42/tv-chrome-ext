@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "TV Show Manager",
+  "description": "Get notified when a new episode of your favourite TV Show is coming.",
+  "version": "2.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "TV Show Manager"
+  },
+  "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+  },
+  "background": {
+    "scripts": ["js/background.min.js"],
+    "persistent": false
+  },
+  "options_page": "background.html",
+  "permissions": ["storage","http://*.appspot.com/","http://*.google-analytics.com/","https://*.google-analytics.com/","background","notifications","unlimitedStorage"],
+  "update_url": "http://chrome-ext.rs.af.cm/updates.xml",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
